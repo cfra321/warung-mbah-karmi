@@ -7,4 +7,7 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
     react()],
+    server: {
+        allowedHosts: ['festivals-hygiene-departments-king.trycloudflare.com'],
+     },
 })
