@@ -17,8 +17,8 @@ const AppRouter = () => (
           <Route index element={<Dashboard />} />
           <Route path="menu" element={<MenuList />} />
           <Route path="orders" element={<Orders />} />
-          <Route path="*" element={<NotFound />} />
           <Route path="settings" element={<Settings />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </div>
