@@ -27,6 +27,8 @@ npm install
 # Start the development server
 npm run dev
 
+# How to Tunnel on local 
+npx untun@latest tunnel http://localhost:5173
 
 Then open your browser and visit: [http://localhost:5173](http://localhost:5173)
 
@@ -43,33 +45,35 @@ Then open your browser and visit: [http://localhost:5173](http://localhost:5173)
 
 ## 📦 Project Structure
 
+```plaintext
 warung-mbah-karmi/
-src/
-├── assets/          # Gambar, ikon, font, dll
-│   ├── images/
-│   └── styles/
-│       └── tailwind.css
-│
-├── components/      # Komponen UI reusable
-│   ├── Navbar.jsx
-│   ├── Sidebar.jsx
-│   ├── Button.jsx
-│   └── CardMenu.jsx
-│
-├── layouts/         # Layout utama (DashboardLayout, AuthLayout, dst)
-│   └── DashboardLayout.jsx
-│
-├── pages/           # Halaman aplikasi
-│   ├── Dashboard.jsx
-│   ├── Orders.jsx
-│   ├── MenuList.jsx
-│   └── NotFound.jsx
-│
-├── router/          # Konfigurasi routing
-│   └── index.jsx
-│
-├── App.jsx          # Root component
-└── main.jsx         # Entry point
+└── src/
+    ├── assets/          # Images, icons, fonts, etc.
+    │   ├── images/
+    │   └── styles/
+    │       └── tailwind.css
+    │
+    ├── components/      # Reusable UI components
+    │   ├── Navbar.jsx
+    │   ├── Sidebar.jsx
+    │   ├── Button.jsx
+    │   └── CardMenu.jsx
+    │
+    ├── layouts/         # Main layouts (DashboardLayout, AuthLayout, etc.)
+    │   └── DashboardLayout.jsx
+    │
+    ├── pages/           # Application pages
+    │   ├── Dashboard.jsx
+    │   ├── Orders.jsx
+    │   ├── MenuList.jsx
+    │   └── NotFound.jsx
+    │
+    ├── router/          # Routing configuration
+    │   └── index.jsx
+    │
+    ├── App.jsx          # Root component
+    └── main.jsx         # Entry point
+```
 
 
 Made with ❤️ for Warung Mbah Karmi
