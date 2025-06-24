@@ -86,7 +86,7 @@ const handlePayment = () => {
       </div>
 
       {/* Cart Sidebar */}
-      <div className="w-full lg:w-1/3 bg-white text-gray-800 border border-gray-200 shadow rounded-xl p-4 h-fit mt-[5vh]">
+     <div className="w-full lg:w-1/3 bg-white text-gray-800 border border-gray-200 shadow rounded-xl p-4 h-fit mt-[5vh] pb-18 md:pb-4">
         <h3 className="text-xl font-semibold mb-4">Pesanan</h3>
         {cart.length === 0 ? (
           <p className="text-gray-500">Belum ada pesanan.</p>
