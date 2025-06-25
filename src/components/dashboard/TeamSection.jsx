@@ -1,11 +1,15 @@
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaYoutube, FaPinterestP } from 'react-icons/fa';
+import team1 from '../../assets/img/team1.jpg';
+import team2 from '../../assets/img/team2.jpg';
+import team3 from '../../assets/img/team3.jpg';
+import team4 from '../../assets/img/team4.jpg';
 
 const teamMembers = [
-  { name: 'alr. Mbah Karmi', role: 'Founder', image: 'src/assets/img/team1.jpg' },
-  { name: 'Siti Nursyamsiah', role: 'Owner', image: 'src/assets/img/team2.jpg' },
-  { name: 'Mama Hero', role: 'Chef', image: '/assets/img/team3.jpg' },
-  { name: 'Kukuh Wicaksono', role: 'Desainer', image: 'src/assets/img/team4.jpg' },
+  { name: 'alr. Mbah Karmi', role: 'Founder', image: team1 },
+  { name: 'Siti Nursyamsiah', role: 'Owner', image: team2 },
+  { name: 'Mama Hero', role: 'Chef', image: team3 },
+  { name: 'Kukuh Wicaksono', role: 'Desainer', image: team4 },
 ];
 
 const TeamSection = () => {
