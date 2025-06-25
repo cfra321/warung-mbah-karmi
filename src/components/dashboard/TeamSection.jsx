@@ -2,7 +2,7 @@ import React from 'react';
 import { FaFacebookF, FaTwitter, FaYoutube, FaPinterestP } from 'react-icons/fa';
 import team1 from '../../assets/img/team1.jpg';
 import team2 from '../../assets/img/team2.jpg';
-import team3 from '../../assets/img/team3.jpg';
+// import team3 from '../../assets/img/team3.jpg';
 import team4 from '../../assets/img/team4.jpg';
 
 const teamMembers = [
