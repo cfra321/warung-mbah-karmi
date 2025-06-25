@@ -6,6 +6,9 @@ import FoodCategorySection from '../components/dashboard/FoodCategorySection';
 import CustomerReview from '../components/dashboard/CustomerReview';
 import heroImage from '../assets/img/nasi-goreng-2.png';
 import bgImage from '../assets/img/bg-nasigoreng.png';
+import FoodMenu from '../components/dashboard/FoodMenu';
+import TeamSection from '../components/dashboard/TeamSection';
+import OurPartners from '../components/dashboard/OurPartner';
 
 const Dashboard = () => {
   return (
@@ -69,6 +72,45 @@ const Dashboard = () => {
         </div>
       </section>
 
+
+        {/* About Us Section */}
+      <section className="py-20 bg-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row items-center gap-10">
+          
+          {/* Left: Food Images Grid */}
+          <div className="grid grid-cols-2 gap-4 md:w-1/2">
+            <img src="https://www.fodors.com/wp-content/uploads/2019/04/04_TraditionalfoodsinJava__Pecel_shutterstock_796820512.jpg" className="rounded-lg w-full h-auto object-cover" alt="Food 1" />
+            <img src="https://images.immediate.co.uk/production/volatile/sites/30/2013/05/VEGAN-RAMEN-998cd60.jpg?quality=90&resize=556,505" className="rounded-lg w-full h-auto object-cover" alt="Food 2" />
+            <img src="https://ralahami.com/wp-content/uploads/2021/04/Avurudu-table-21-3-1024x681.jpg" className="col-span-2 rounded-lg w-full h-auto object-cover" alt="Food 3" />
+          </div>
+
+          {/* Right: Text Content */}
+          <div className="md:w-1/2">
+            <p className="text-green-700 font-semibold mb-2 italic">About us</p>
+            <h2 className="text-3xl font-bold mb-4">Makanan tradisional Jawa, bagian penting dari  <span className="text-green-800"> keseimbangan rasa</span> dan  <span className="text-green-800">budaya</span>.</h2>
+            <p className="text-gray-600 mb-6">
+              Setiap sajian di Warung Mbah Karmi bukan hanya mengenyangkan, tapi juga membangkitkan cerita dan tradisi kuliner Jawa.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                to="/menu"
+                className="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800"
+              >
+                Show more
+              </Link>
+              <button className="flex items-center gap-2 border border-green-700 px-6 py-3 rounded-lg text-green-700 hover:bg-green-50">
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+                Watch video
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Food Category Section */}
+      <FoodCategorySection />
       
       <section className="py-20 bg-gray-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row items-center gap-10">
@@ -123,52 +165,23 @@ const Dashboard = () => {
             
           </div>
         </section>
-      {/* Food Category Section */}
-      <FoodCategorySection />
 
-      {/* About Us Section */}
-      <section className="py-20 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row items-center gap-10">
-          
-          {/* Left: Food Images Grid */}
-          <div className="grid grid-cols-2 gap-4 md:w-1/2">
-            <img src="https://www.fodors.com/wp-content/uploads/2019/04/04_TraditionalfoodsinJava__Pecel_shutterstock_796820512.jpg" className="rounded-lg w-full h-auto object-cover" alt="Food 1" />
-            <img src="https://images.immediate.co.uk/production/volatile/sites/30/2013/05/VEGAN-RAMEN-998cd60.jpg?quality=90&resize=556,505" className="rounded-lg w-full h-auto object-cover" alt="Food 2" />
-            <img src="https://ralahami.com/wp-content/uploads/2021/04/Avurudu-table-21-3-1024x681.jpg" className="col-span-2 rounded-lg w-full h-auto object-cover" alt="Food 3" />
-          </div>
+      {/* Food Menu Section */}
+      <FoodMenu />  
 
-          {/* Right: Text Content */}
-          <div className="md:w-1/2">
-            <p className="text-green-700 font-semibold mb-2 italic">About us</p>
-            <h2 className="text-3xl font-bold mb-4">Makanan tradisional Jawa, bagian penting dari  <span className="text-green-800"> keseimbangan rasa</span> dan  <span className="text-green-800">budaya</span>.</h2>
-            <p className="text-gray-600 mb-6">
-              Setiap sajian di Warung Mbah Karmi bukan hanya mengenyangkan, tapi juga membangkitkan cerita dan tradisi kuliner Jawa.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                to="/menu"
-                className="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800"
-              >
-                Show more
-              </Link>
-              <button className="flex items-center gap-2 border border-green-700 px-6 py-3 rounded-lg text-green-700 hover:bg-green-50">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-                Watch video
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-    
-      <CustomerReview/>
+      {/* Team Section */}
+      <TeamSection />
 
-      
-      {/* Footer Section */}       
+      {/* Customer Review Section */}
+      <CustomerReview />
+
+      {/* Our Partners Section */}
+      <OurPartners />
+
+      {/* Footer Section */}
       <Footer />
     </div>
-  );
+  );  
 };
 
 export default Dashboard;
