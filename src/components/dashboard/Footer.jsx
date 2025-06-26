@@ -8,7 +8,17 @@ import {
 } from 'react-icons/fa';
 import { FiSend, FiMapPin, FiPhone, FiMail, FiClock } from 'react-icons/fi';
 
+import food1 from '../../assets/img/food1.jpeg';
+import food2 from '../../assets/img/food2.webp';
+import food3 from '../../assets/img/food3.webp';
+import food4 from '../../assets/img/food4.jpg';
+import food5 from '../../assets/img/food5.jpg';
+import food6 from '../../assets/img/food6.jpg';
+
+
 const Footer = () => {
+
+  const images = [food1, food2, food3, food4, food5, food6];
   return (
     <footer className="bg-[#f2f5f1] text-gray-700">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
@@ -41,7 +51,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4">Kontak Kami</h3>
           <ul className="space-y-2 text-sm">
             <li className="flex items-start gap-2">
-              <FiMapPin className="mt-1" /> Jl. Kampung Tradisi No.45, Yogyakarta
+              <FiMapPin className="mt-1" /> Jl. Kampung Babakan No.86 Sukatani Tapos Depok, Jawa Barat
             </li>
             <li className="flex items-center gap-2">
               <FiPhone /> +62 812-3456-7890
@@ -71,11 +81,11 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-4">Instagram Gallery</h3>
           <div className="grid grid-cols-3 gap-2">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
-              <div key={i} className="w-full h-20 bg-gray-300 rounded-md overflow-hidden">
+            {images.map((img, index) => (
+              <div key={index} className="w-full h-20 bg-gray-300 rounded-md overflow-hidden">
                 <img
-                  src={`https://source.unsplash.com/100x100/?food&sig=${i}`}
-                  alt={`Food ${i}`}
+                  src={img}
+                  alt={`Food ${index + 1}`}
                   className="w-full h-full object-cover"
                 />
               </div>
