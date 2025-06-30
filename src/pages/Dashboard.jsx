@@ -9,13 +9,13 @@ import bgImage from '../assets/img/bg-nasigoreng.png';
 import FoodMenu from '../components/dashboard/FoodMenu';
 import TeamSection from '../components/dashboard/TeamSection';
 import OurPartners from '../components/dashboard/OurPartner';
+import WhatsAppButton from '../components/WhatsAppButton';
 
 const Dashboard = () => {
   return (
     <div className="min-h-screen bg-white text-gray-800">
       <NavbarDashboard />
-
-
+      <WhatsAppButton />
 
       <section className="relative overflow-hidden bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 flex flex-col md:flex-row items-center justify-between">
